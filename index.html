@@ -54,7 +54,7 @@
     .page{display:none;}.page.active{display:block;}
 
     /* PAGE HERO (inner pages) */
-    .page-hero{background:var(--black);color:#fff;padding:3.5rem 2.5rem;text-align:center;position:relative;overflow:hidden;}
+    .page-hero{background:var(--black);color:#fff;padding:5rem 2.5rem;text-align:center;position:relative;overflow:hidden;}
     .page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 50% 120%,rgba(232,80,10,0.12) 0%,transparent 70%);pointer-events:none;}
     .page-hero h1{font-family:var(--font-head);font-size:32px;font-weight:900;letter-spacing:3px;text-transform:uppercase;margin-bottom:0.6rem;position:relative;}
     .page-hero h1 span{color:var(--orange);}
@@ -66,9 +66,9 @@
     /* HERO SPLIT (home) */
     .hero{display:flex;min-height:560px;background:var(--white);}
     .hero-left{flex:1;display:flex;align-items:center;background:var(--white);padding:5rem 3rem 4.5rem 2.5rem;min-width:0;}
-    .hero-right{flex:1;position:relative;overflow:hidden;}
-    .hero-right img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block;}
-    .hero-right::after{content:'';position:absolute;inset:0;background:linear-gradient(to right,var(--white) 0%,transparent 25%);pointer-events:none;}
+    .hero-right{flex:1;position:relative;overflow:hidden;min-height:560px;}
+    .hero-right img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block;position:absolute;inset:0;}
+    .hero-right::after{content:'';position:absolute;inset:0;background:linear-gradient(to right,var(--white) 0%,transparent 25%);pointer-events:none;z-index:1;}
     .hero-content{max-width:520px;}
     .hero h1{font-family:var(--font-head);font-size:40px;font-weight:900;line-height:1.2;color:var(--text-primary);margin-bottom:1.2rem;letter-spacing:2px;text-transform:uppercase;}
     .hero h1 span{color:var(--orange);}
@@ -95,11 +95,11 @@
     .cert-desc{font-family:var(--font-body);font-size:12px;color:#7A5A50;font-weight:600;}
 
     /* SECTIONS */
-    .section{padding:3.5rem 2.5rem;max-width:960px;margin:0 auto;}
-    .section-wide{padding:3.5rem 2.5rem;max-width:1100px;margin:0 auto;}
-    .sec-title{font-family:var(--font-head);font-size:22px;font-weight:800;margin-bottom:0.5rem;letter-spacing:2px;text-transform:uppercase;color:var(--text-primary);text-align:center;}
+    .section{padding:5rem 2.5rem;max-width:960px;margin:0 auto;}
+    .section-wide{padding:5rem 2.5rem;max-width:1100px;margin:0 auto;}
+    .sec-title{font-family:var(--font-head);font-size:22px;font-weight:800;margin-bottom:0.6rem;letter-spacing:2px;text-transform:uppercase;color:var(--text-primary);text-align:center;}
     .sec-title span{color:var(--orange);}
-    .sec-sub{font-size:15px;color:var(--text-secondary);margin-bottom:2rem;line-height:1.6;text-align:center;}
+    .sec-sub{font-size:15px;color:var(--text-secondary);margin-bottom:2.5rem;line-height:1.6;text-align:center;}
     .divider{height:1px;background:var(--border);}
     .bg-off{background:var(--off-white);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
     .bg-black{background:var(--black);}
@@ -139,7 +139,7 @@
     .industry-card h4{font-family:var(--font-head);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--text-primary);line-height:1.4;}
 
     /* BRANDS */
-    .brands-bg{background:var(--white);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:3.5rem 2.5rem;}
+    .brands-bg{background:var(--white);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:5rem 2.5rem;}
     .brands-inner{max-width:960px;margin:0 auto;}
     .brands-tier{margin-bottom:2.25rem;}
     .tier-label{font-family:var(--font-head);font-size:11px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:1.2px;margin-bottom:1rem;display:flex;align-items:center;gap:12px;}
@@ -179,14 +179,14 @@
     .impact-text strong{display:block;font-family:var(--font-head);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--text-primary);margin-bottom:4px;}
 
     /* ABOUT PAGE */
-    .about-intro{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;padding:3.5rem 2.5rem;max-width:960px;margin:0 auto;}
+    .about-intro{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;padding:5rem 2.5rem;max-width:960px;margin:0 auto;}
     .about-img{border-radius:var(--r-lg);overflow:hidden;aspect-ratio:4/3;}
     .about-img img{width:100%;height:100%;object-fit:cover;}
     .about-text h2{font-family:var(--font-head);font-size:22px;font-weight:800;letter-spacing:2px;text-transform:uppercase;margin-bottom:1rem;color:var(--text-primary);}
     .about-text h2 span{color:var(--orange);}
     .about-text p{font-size:14px;color:var(--text-secondary);line-height:1.8;margin-bottom:1rem;}
     .about-highlight{background:var(--orange-light);border-left:4px solid var(--orange);padding:1rem 1.2rem;border-radius:0 var(--r-md) var(--r-md) 0;font-size:14px;color:var(--orange-dark);font-weight:600;line-height:1.6;margin-top:1.2rem;}
-    .timeline{max-width:700px;margin:0 auto;padding:0 2.5rem;}
+    .timeline{max-width:700px;margin:0 auto;padding:0 2.5rem 2rem;}
     .timeline-item{display:flex;gap:1.5rem;margin-bottom:2rem;}
     .timeline-line{display:flex;flex-direction:column;align-items:center;}
     .timeline-dot{width:14px;height:14px;border-radius:50%;background:var(--orange);flex-shrink:0;margin-top:4px;}
@@ -217,7 +217,7 @@
     .award-card p{font-size:12px;color:var(--text-secondary);line-height:1.6;}
 
     /* CTA STRIP */
-    .cta-strip{background:linear-gradient(135deg,var(--black) 0%,var(--black-mid) 100%);padding:3.5rem 2.5rem;text-align:center;position:relative;overflow:hidden;}
+    .cta-strip{background:linear-gradient(135deg,var(--black) 0%,var(--black-mid) 100%);padding:5rem 2.5rem;text-align:center;position:relative;overflow:hidden;}
     .cta-strip::before{content:'';position:absolute;width:320px;height:320px;border-radius:50%;background:rgba(232,80,10,0.1);top:-100px;right:-60px;pointer-events:none;}
     .cta-label{color:rgba(255,255,255,0.55);font-size:13px;margin-bottom:0.6rem;font-family:var(--font-body);}
     .cta-heading{color:#fff;font-size:20px;font-weight:800;margin-bottom:1.75rem;font-family:var(--font-head);letter-spacing:3px;text-transform:uppercase;}
@@ -483,11 +483,6 @@
       <div class="testi-card"><div class="testi-quote">"Chintan Traders has been our go-to safety supplier for over 8 years. Genuine KARAM products, fast delivery within GIDC, and they always have stock when we need it urgently."</div><div class="testi-author">Purchase Manager</div><div class="testi-company">Leading Chemical Plant, Ankleshwar GIDC</div></div>
       <div class="testi-card"><div class="testi-quote">"We switched our entire PPE procurement to Chintan Traders. The range is comprehensive — from helmets to chemical suits — and all products come with proper certification documents."</div><div class="testi-author">EHS Officer</div><div class="testi-company">Pharmaceutical Manufacturing Unit, Bharuch</div></div>
       <div class="testi-card"><div class="testi-quote">"Reliable supplier for fire safety equipment. Responsive team, competitive pricing, and they sourced a specialised product for us within 48 hours. Highly recommended."</div><div class="testi-author">Safety Head</div><div class="testi-company">Engineering & Fabrication Company, Vadodara</div></div>
-    </div>
-    <div class="impact-grid" style="margin-top:1.5rem;">
-      <div class="impact-card"><div class="impact-num">48h</div><div class="impact-text"><strong>Rapid Sourcing</strong>A petrochemical plant needed 300 specialised chemical suits urgently. Sourced and delivered within 48 hours — zero production delay.</div></div>
-      <div class="impact-card"><div class="impact-num">30%</div><div class="impact-text"><strong>Cost Savings</strong>A large textile manufacturer consolidated PPE procurement with us and reduced per-unit costs by 30% through bulk authorised supply.</div></div>
-      <div class="impact-card"><div class="impact-num">🚀</div><div class="impact-text"><strong>Supplied to ISRO</strong>Proud to have supplied certified gas masks to ISRO ahead of the Chandrayaan-3 lunar mission in 2023.</div></div>
     </div>
   </div>
 
@@ -825,32 +820,6 @@
     </div>
   </div>
 
-  <div class="divider"></div>
-
-  <div class="section">
-    <div class="sec-title">Awards & <span>recognition</span></div>
-    <div class="sec-sub">Placeholder — add your actual awards and recognition here</div>
-    <div class="award-grid">
-      <div class="award-card">
-        <div class="award-year">2023</div>
-        <h4>Supplied Gas Masks to ISRO</h4>
-        <p>Proudly supplied certified gas masks to the Indian Space Research Organisation (ISRO) ahead of the Chandrayaan-3 lunar mission — one of India's most significant space achievements.</p>
-      </div>
-      <div class="award-card">
-        <div class="award-year">2023</div>
-        <h4>Government e-Marketplace (GeM) Registration</h4>
-        <p>Registered as a verified seller on GeM — India's national procurement portal. Now authorised to supply PPE and safety equipment directly to government departments and PSUs across India.</p>
-      </div>
-      <div class="award-card">
-        <div class="award-year">Placeholder Year</div>
-        <h4>Award / Recognition Title</h4>
-        <p>Description of the award, who presented it and what it was for. Update this with your actual recognition.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="cta-strip"><div class="cta-label">Want to verify our authorisations or request certificates?</div><div class="cta-heading">We're happy to share documentation</div><button class="btn-orange" onclick="showPage('contact')">Contact us →</button></div>
-  <footer class="footer-main"><div class="footer-inner"><div class="footer-col footer-brand"><div class="footer-logo"><div class="footer-logo-mark">CT</div><div><div class="footer-logo-name">Chintan Traders</div><div class="footer-logo-tag">Your complete safety partner.</div></div></div><p class="footer-about">Serving GIDC industries since 1996.</p></div><div class="footer-col"><div class="footer-col-title">Products</div><ul class="footer-links"><li onclick="showPage('ppe')">PPE</li><li onclick="showPage('fall')">Fall Protection</li><li onclick="showPage('fire')">Fire Safety</li><li onclick="showPage('loto')">LOTO</li></ul></div><div class="footer-col"><div class="footer-col-title">Company</div><ul class="footer-links"><li onclick="showPage('about')">About Us</li><li onclick="showPage('certs')">Certifications</li><li onclick="showPage('contact')">Contact</li></ul></div><div class="footer-col"><div class="footer-col-title">Contact</div><ul class="footer-contact-list"><li><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg><span><a href="tel:+919824121408">+91 98241 21408</a></span></li></ul></div></div><div class="footer-bottom"><div class="footer-bottom-inner"><span>&copy; 2026 <strong>Chintan Traders</strong></span></div></div></footer>
 </div><!-- end certs -->
 
 <!-- ═══════════ CONTACT ═══════════ -->
