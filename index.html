@@ -251,28 +251,28 @@
     .wa-btn:hover{background:#16a34a;}
 
     /* FOOTER */
-    .footer-main{background:#111;color:rgba(255,255,255,0.7);font-family:var(--font-body);}
+    .footer-main{background:var(--white);color:var(--text-secondary);font-family:var(--font-body);border-top:1px solid var(--border);}
     .footer-inner{max-width:1100px;margin:0 auto;padding:3.5rem 2.5rem 2.5rem;display:grid;grid-template-columns:1.8fr 1fr 1fr 1.4fr;gap:3rem;}
     .footer-brand .footer-logo{display:flex;align-items:center;gap:10px;margin-bottom:1rem;}
     .footer-logo-mark{width:38px;height:38px;background:var(--orange);border-radius:var(--r-md);display:flex;align-items:center;justify-content:center;font-family:var(--font-head);font-weight:900;font-size:13px;color:#fff;flex-shrink:0;}
-    .footer-logo-name{color:#fff;font-family:var(--font-head);font-size:14px;font-weight:800;letter-spacing:2px;text-transform:uppercase;}
-    .footer-logo-tag{color:rgba(255,255,255,0.4);font-size:11px;margin-top:1px;}
-    .footer-about{font-size:13px;line-height:1.7;color:rgba(255,255,255,0.5);margin-bottom:1.2rem;}
+    .footer-logo-name{color:var(--text-primary);font-family:var(--font-head);font-size:14px;font-weight:800;letter-spacing:2px;text-transform:uppercase;}
+    .footer-logo-tag{color:var(--text-muted);font-size:11px;margin-top:1px;}
+    .footer-about{font-size:13px;line-height:1.7;color:var(--text-secondary);margin-bottom:1.2rem;}
     .footer-social{display:flex;gap:10px;}
-    .footer-social a{width:34px;height:34px;background:rgba(255,255,255,0.08);border-radius:50%;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.6);transition:background 0.2s,color 0.2s;text-decoration:none;}
-    .footer-social a:hover{background:var(--orange);color:#fff;}
-    .footer-col-title{font-family:var(--font-head);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:#fff;margin-bottom:1.1rem;padding-bottom:0.6rem;border-bottom:1px solid rgba(255,255,255,0.1);}
+    .footer-social a{width:34px;height:34px;background:var(--off-white);border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--text-secondary);transition:background 0.2s,color 0.2s;text-decoration:none;}
+    .footer-social a:hover{background:var(--orange);color:#fff;border-color:var(--orange);}
+    
     .footer-links{list-style:none;display:flex;flex-direction:column;gap:8px;}
-    .footer-links li{font-size:13px;color:rgba(255,255,255,0.5);cursor:pointer;transition:color 0.2s;}
+    .footer-links li{font-size:13px;color:var(--text-secondary);cursor:pointer;transition:color 0.2s;}
     .footer-links li:hover{color:var(--orange);}
     .footer-contact-list{list-style:none;display:flex;flex-direction:column;gap:12px;}
-    .footer-contact-list li{display:flex;gap:10px;align-items:flex-start;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.6;}
+    .footer-contact-list li{display:flex;gap:10px;align-items:flex-start;font-size:12px;color:var(--text-secondary);line-height:1.6;}
     .footer-contact-list li svg{flex-shrink:0;margin-top:2px;color:var(--orange);}
-    .footer-contact-list a{color:rgba(255,255,255,0.6);text-decoration:none;}
+    .footer-contact-list a{color:var(--text-secondary);text-decoration:none;}
     .footer-contact-list a:hover{color:var(--orange);}
-    .footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:1.1rem 2.5rem;}
-    .footer-bottom-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;font-size:11px;color:rgba(255,255,255,0.3);}
-    .footer-bottom-inner strong{color:rgba(255,255,255,0.7);}
+    .footer-bottom{border-top:1px solid var(--border);padding:1.1rem 2.5rem;}
+    .footer-bottom-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;font-size:11px;color:var(--text-muted);}
+    .footer-bottom-inner strong{color:var(--text-primary);}
 
     /* WA FLOAT */
     .wa-float{position:fixed;bottom:28px;right:28px;z-index:999;width:56px;height:56px;background:#22C55E;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(34,197,94,0.45);transition:transform 0.2s;text-decoration:none;}
@@ -703,14 +703,14 @@
     <div class="sec-title">PPE <span>categories</span></div>
     <div class="sec-sub">Stocking all major PPE categories from authorised brands</div>
     <div class="prod-detail-grid">
-      <div class="prod-detail-card"><h4>Head Protection</h4><p>Safety helmets, bump caps, hard hats — ratchet and pin-lock suspension. ISI marked and EN certified.</p><span class="prod-brand-tag">KARAM · Venus</span></div>
-      <div class="prod-detail-card"><h4>Eye & Face Protection</h4><p>Safety glasses, goggles, face shields, welding glasses. Anti-scratch, anti-fog, UV protection variants.</p><span class="prod-brand-tag">Venus · 3M</span></div>
-      <div class="prod-detail-card"><h4>Respiratory Protection</h4><p>Disposable masks (N95, FFP2, FFP3), half-face and full-face respirators, SCBAs, airline breathing apparatus.</p><span class="prod-brand-tag">Venus · Dräger · 3M</span></div>
-      <div class="prod-detail-card"><h4>Body Protection</h4><p>Hi-vis vests and jackets, coveralls, chemical suits, disposable coveralls, arc flash suits, welding jackets.</p><span class="prod-brand-tag">DuPont · NexG</span></div>
-      <div class="prod-detail-card"><h4>Hand Protection</h4><p>Cut-resistant, chemical, heat-resistant, grip, anti-vibration and disposable gloves for all industries.</p><span class="prod-brand-tag">Atlas · Ansell</span></div>
-      <div class="prod-detail-card"><h4>Foot Protection</h4><p>Safety shoes, safety boots, gumboots, chemical-resistant footwear. Steel toe and composite toe options.</p><span class="prod-brand-tag">Leslico · Karam</span></div>
-      <div class="prod-detail-card"><h4>Hearing Protection</h4><p>Foam ear plugs, banded ear plugs, ear muffs — SNR rated to 35dB. Corded and uncorded variants.</p><span class="prod-brand-tag">Venus · 3M</span></div>
-      <div class="prod-detail-card"><h4>Knee & Elbow Pads</h4><p>Hard-cap and soft-cap knee pads, elbow protectors for flooring, welding and construction applications.</p><span class="prod-brand-tag">KARAM</span></div>
+      <div class="prod-detail-card"><h4>Head Protection</h4><p>Safety helmets, bump caps, hard hats — ratchet and pin-lock suspension. ISI marked and EN certified.</p></div>
+      <div class="prod-detail-card"><h4>Eye & Face Protection</h4><p>Safety glasses, goggles, face shields, welding glasses. Anti-scratch, anti-fog, UV protection variants.</p></div>
+      <div class="prod-detail-card"><h4>Respiratory Protection</h4><p>Disposable masks (N95, FFP2, FFP3), half-face and full-face respirators, SCBAs, airline breathing apparatus.</p></div>
+      <div class="prod-detail-card"><h4>Body Protection</h4><p>Hi-vis vests and jackets, coveralls, chemical suits, disposable coveralls, arc flash suits, welding jackets.</p></div>
+      <div class="prod-detail-card"><h4>Hand Protection</h4><p>Cut-resistant, chemical, heat-resistant, grip, anti-vibration and disposable gloves for all industries.</p></div>
+      <div class="prod-detail-card"><h4>Foot Protection</h4><p>Safety shoes, safety boots, gumboots, chemical-resistant footwear. Steel toe and composite toe options.</p></div>
+      <div class="prod-detail-card"><h4>Hearing Protection</h4><p>Foam ear plugs, banded ear plugs, ear muffs — SNR rated to 35dB. Corded and uncorded variants.</p></div>
+      <div class="prod-detail-card"><h4>Knee & Elbow Pads</h4><p>Hard-cap and soft-cap knee pads, elbow protectors for flooring, welding and construction applications.</p></div>
     </div>
   </div>
   <div class="cta-strip"><div class="cta-label">Need a specific product or bulk quantity?</div><div class="cta-heading">Send us your requirement</div><button class="btn-orange" onclick="showPage('contact')">Get a quote →</button></div>
@@ -728,14 +728,14 @@
     <div class="sec-title">Fall protection <span>range</span></div>
     <div class="sec-sub">KARAM authorised — India's #1 fall protection brand with 3,800+ certified products</div>
     <div class="prod-detail-grid">
-      <div class="prod-detail-card"><h4>Full Body Harnesses</h4><p>Class A, B and C harnesses for general industry, construction and rescue. Quick-connect buckles, dorsal and sternal D-rings.</p><span class="prod-brand-tag">KARAM</span></div>
-      <div class="prod-detail-card"><h4>Lanyards</h4><p>Fixed, adjustable, twin-leg and shock-absorbing lanyards. Webbing and rope variants. 1m, 1.5m, 2m lengths.</p><span class="prod-brand-tag">KARAM</span></div>
-      <div class="prod-detail-card"><h4>Self-Retracting Lifelines (SRL)</h4><p>Compact 3m to 50m SRLs with swivel snap hooks. Fast-acting braking mechanism. Steel and galvanized wire rope.</p><span class="prod-brand-tag">KARAM</span></div>
-      <div class="prod-detail-card"><h4>Rope Grab & Rope Access</h4><p>Rope grabs, rope access kits, descenders and ascenders for rope-based working-at-height applications.</p><span class="prod-brand-tag">KARAM</span></div>
-      <div class="prod-detail-card"><h4>Anchor Devices</h4><p>Temporary and permanent anchor points, deadweight anchors, beam clamps and roof anchors for various structures.</p><span class="prod-brand-tag">KARAM</span></div>
-      <div class="prod-detail-card"><h4>Tripod & Confined Space</h4><p>Aluminium and steel tripods, winches, rescue davit arms and confined space entry kits for manholes and tanks.</p><span class="prod-brand-tag">KARAM</span></div>
-      <div class="prod-detail-card"><h4>Horizontal Lifeline Systems</h4><p>Stainless steel and galvanized wire rope horizontal lifeline systems for rooftops, bridges and gantries.</p><span class="prod-brand-tag">KARAM</span></div>
-      <div class="prod-detail-card"><h4>Safety Nets</h4><p>Personnel safety nets, tool nets, debris nets — compliant with EN 1263. Various mesh sizes and load ratings.</p><span class="prod-brand-tag">KARAM</span></div>
+      <div class="prod-detail-card"><h4>Full Body Harnesses</h4><p>Class A, B and C harnesses for general industry, construction and rescue. Quick-connect buckles, dorsal and sternal D-rings.</p></div>
+      <div class="prod-detail-card"><h4>Lanyards</h4><p>Fixed, adjustable, twin-leg and shock-absorbing lanyards. Webbing and rope variants. 1m, 1.5m, 2m lengths.</p></div>
+      <div class="prod-detail-card"><h4>Self-Retracting Lifelines (SRL)</h4><p>Compact 3m to 50m SRLs with swivel snap hooks. Fast-acting braking mechanism. Steel and galvanized wire rope.</p></div>
+      <div class="prod-detail-card"><h4>Rope Grab & Rope Access</h4><p>Rope grabs, rope access kits, descenders and ascenders for rope-based working-at-height applications.</p></div>
+      <div class="prod-detail-card"><h4>Anchor Devices</h4><p>Temporary and permanent anchor points, deadweight anchors, beam clamps and roof anchors for various structures.</p></div>
+      <div class="prod-detail-card"><h4>Tripod & Confined Space</h4><p>Aluminium and steel tripods, winches, rescue davit arms and confined space entry kits for manholes and tanks.</p></div>
+      <div class="prod-detail-card"><h4>Horizontal Lifeline Systems</h4><p>Stainless steel and galvanized wire rope horizontal lifeline systems for rooftops, bridges and gantries.</p></div>
+      <div class="prod-detail-card"><h4>Safety Nets</h4><p>Personnel safety nets, tool nets, debris nets — compliant with EN 1263. Various mesh sizes and load ratings.</p></div>
     </div>
   </div>
   <div class="cta-strip"><div class="cta-label">Working at height? We'll help you choose the right system.</div><div class="cta-heading">Get expert advice</div><button class="btn-orange" onclick="showPage('contact')">Talk to us →</button></div>
@@ -753,14 +753,14 @@
     <div class="sec-title">Fire safety <span>range</span></div>
     <div class="sec-sub">From fire extinguishers to proximity suits — fully stocked for Gujarat's industrial belt</div>
     <div class="prod-detail-grid">
-      <div class="prod-detail-card"><h4>Fire Extinguishers</h4><p>ABC dry powder, CO2, foam, water mist and clean agent extinguishers. 1kg to 75kg. BIS approved.</p><span class="prod-brand-tag">NewAge · Kanex</span></div>
-      <div class="prod-detail-card"><h4>Fire Fighting Suits</h4><p>Proximity suits, entry suits, structural firefighting suits. Aluminised and Nomex variants. EN 469 compliant.</p><span class="prod-brand-tag">Multiple brands</span></div>
-      <div class="prod-detail-card"><h4>Self-Contained Breathing Apparatus (SCBA)</h4><p>30-min and 60-min compressed air SCBAs for firefighting, confined space and chemical emergency response.</p><span class="prod-brand-tag">Dräger · Venus</span></div>
-      <div class="prod-detail-card"><h4>Fire Hose Reels & Accessories</h4><p>Fire hose reels, delivery hoses, branch pipes, couplings and hydrant valves for fixed fire suppression systems.</p><span class="prod-brand-tag">NewAge</span></div>
-      <div class="prod-detail-card"><h4>Smoke & Gas Detectors</h4><p>Smoke detectors, heat detectors, flame detectors, combustible gas detectors and CO monitors for early warning systems.</p><span class="prod-brand-tag">Dräger</span></div>
-      <div class="prod-detail-card"><h4>Fire Blankets</h4><p>Fibreglass and wool fire blankets for kitchen, laboratory and industrial use. 1m x 1m to 2m x 2m sizes.</p><span class="prod-brand-tag">Multiple brands</span></div>
-      <div class="prod-detail-card"><h4>Emergency Escape Hoods</h4><p>Self-rescue escape hoods with 15-minute protection against smoke, CO and toxic gases for building evacuation.</p><span class="prod-brand-tag">Venus · Dräger</span></div>
-      <div class="prod-detail-card"><h4>Fire Safety Signage</h4><p>Photoluminescent and LED fire exit signs, fire action notices, evacuation maps and first aid signs — IS 9457 compliant.</p><span class="prod-brand-tag">Multiple brands</span></div>
+      <div class="prod-detail-card"><h4>Fire Extinguishers</h4><p>ABC dry powder, CO2, foam, water mist and clean agent extinguishers. 1kg to 75kg. BIS approved.</p></div>
+      <div class="prod-detail-card"><h4>Fire Fighting Suits</h4><p>Proximity suits, entry suits, structural firefighting suits. Aluminised and Nomex variants. EN 469 compliant.</p></div>
+      <div class="prod-detail-card"><h4>Self-Contained Breathing Apparatus (SCBA)</h4><p>30-min and 60-min compressed air SCBAs for firefighting, confined space and chemical emergency response.</p></div>
+      <div class="prod-detail-card"><h4>Fire Hose Reels & Accessories</h4><p>Fire hose reels, delivery hoses, branch pipes, couplings and hydrant valves for fixed fire suppression systems.</p></div>
+      <div class="prod-detail-card"><h4>Smoke & Gas Detectors</h4><p>Smoke detectors, heat detectors, flame detectors, combustible gas detectors and CO monitors for early warning systems.</p></div>
+      <div class="prod-detail-card"><h4>Fire Blankets</h4><p>Fibreglass and wool fire blankets for kitchen, laboratory and industrial use. 1m x 1m to 2m x 2m sizes.</p></div>
+      <div class="prod-detail-card"><h4>Emergency Escape Hoods</h4><p>Self-rescue escape hoods with 15-minute protection against smoke, CO and toxic gases for building evacuation.</p></div>
+      <div class="prod-detail-card"><h4>Fire Safety Signage</h4><p>Photoluminescent and LED fire exit signs, fire action notices, evacuation maps and first aid signs — IS 9457 compliant.</p></div>
     </div>
   </div>
   <div class="cta-strip"><div class="cta-label">Need a fire safety audit or product recommendation?</div><div class="cta-heading">We'll help you stay compliant</div><button class="btn-orange" onclick="showPage('contact')">Get in touch →</button></div>
@@ -778,14 +778,14 @@
     <div class="sec-title">LOTO <span>range</span></div>
     <div class="sec-sub">Preventing accidental equipment start-up during maintenance — OSHA and IS 5216 compliant</div>
     <div class="prod-detail-grid">
-      <div class="prod-detail-card"><h4>Lockout Padlocks</h4><p>Keyed-different and keyed-alike safety padlocks. Red, blue, yellow — colour-coded by worker or department. Lightweight aluminum body.</p><span class="prod-brand-tag">E-Square · Brady</span></div>
-      <div class="prod-detail-card"><h4>Lockout Stations</h4><p>Wall-mounted LOTO stations stocked with padlocks, hasps, tags and devices. Visible and accessible at point-of-use.</p><span class="prod-brand-tag">E-Square</span></div>
-      <div class="prod-detail-card"><h4>Hasps & Group Lockout</h4><p>Multi-lock hasps for group lockout allowing up to 6 workers to lock simultaneously on shared energy sources.</p><span class="prod-brand-tag">E-Square · Brady</span></div>
-      <div class="prod-detail-card"><h4>Valve Lockouts</h4><p>Ball valve, gate valve, butterfly valve and plug valve lockouts. Universal and size-specific variants in durable polypropylene.</p><span class="prod-brand-tag">E-Square</span></div>
-      <div class="prod-detail-card"><h4>Circuit Breaker Lockouts</h4><p>MCB lockouts, plug lockouts, push-button lockouts and electrical panel lockout devices for electrical energy isolation.</p><span class="prod-brand-tag">E-Square · Brady</span></div>
-      <div class="prod-detail-card"><h4>Safety Tags & Labels</h4><p>Danger and caution tagout tags, equipment tags, barricade tags. Tear-resistant polyester and card variants.</p><span class="prod-brand-tag">E-Square</span></div>
-      <div class="prod-detail-card"><h4>Cable & Pipe Lockouts</h4><p>Flexible cable lockouts for irregular-shaped valves and pipe-end lockouts for isolation of pipe systems.</p><span class="prod-brand-tag">E-Square</span></div>
-      <div class="prod-detail-card"><h4>LOTO Kits</h4><p>Ready-to-use LOTO kits with padlocks, hasps, tags and devices in a portable pouch or case — for contractors and maintenance teams.</p><span class="prod-brand-tag">E-Square · Brady</span></div>
+      <div class="prod-detail-card"><h4>Lockout Padlocks</h4><p>Keyed-different and keyed-alike safety padlocks. Red, blue, yellow — colour-coded by worker or department. Lightweight aluminum body.</p></div>
+      <div class="prod-detail-card"><h4>Lockout Stations</h4><p>Wall-mounted LOTO stations stocked with padlocks, hasps, tags and devices. Visible and accessible at point-of-use.</p></div>
+      <div class="prod-detail-card"><h4>Hasps & Group Lockout</h4><p>Multi-lock hasps for group lockout allowing up to 6 workers to lock simultaneously on shared energy sources.</p></div>
+      <div class="prod-detail-card"><h4>Valve Lockouts</h4><p>Ball valve, gate valve, butterfly valve and plug valve lockouts. Universal and size-specific variants in durable polypropylene.</p></div>
+      <div class="prod-detail-card"><h4>Circuit Breaker Lockouts</h4><p>MCB lockouts, plug lockouts, push-button lockouts and electrical panel lockout devices for electrical energy isolation.</p></div>
+      <div class="prod-detail-card"><h4>Safety Tags & Labels</h4><p>Danger and caution tagout tags, equipment tags, barricade tags. Tear-resistant polyester and card variants.</p></div>
+      <div class="prod-detail-card"><h4>Cable & Pipe Lockouts</h4><p>Flexible cable lockouts for irregular-shaped valves and pipe-end lockouts for isolation of pipe systems.</p></div>
+      <div class="prod-detail-card"><h4>LOTO Kits</h4><p>Ready-to-use LOTO kits with padlocks, hasps, tags and devices in a portable pouch or case — for contractors and maintenance teams.</p></div>
     </div>
   </div>
   <div class="cta-strip"><div class="cta-label">Need a LOTO program for your facility?</div><div class="cta-heading">We'll help you build it</div><button class="btn-orange" onclick="showPage('contact')">Talk to our team →</button></div>
@@ -861,7 +861,7 @@
       <div class="info-stack">
         <div class="sec-title" style="font-size:15px;margin-bottom:0.5rem;text-align:left;">Contact details</div>
         <div class="info-card"><div class="info-label">Contact persons</div><div class="info-val">Chintan Kadakia</div><div class="info-val"><a href="tel:+919824121408">+91 98241 21408</a></div></div>
-        <div class="info-card"><div class="info-label">Office phone</div><div class="info-val"><a href="tel:02646223580">02646 223580</a></div></div>
+        <div class="info-card"><div class="info-label">Office phone</div><div class="info-val"><a href="tel:02646223580">02646 223580</a></div><div class="info-val"><a href="tel:+919824121408">+91 98241 21408</a></div></div>
         <div class="info-card"><div class="info-label">Email</div><div class="info-val small"><a href="mailto:chintantraders71@yahoo.com">chintantraders71@yahoo.com</a><br><a href="mailto:info.chintan22@gmail.com">info.chintan22@gmail.com</a></div></div>
         <div class="info-card"><div class="info-label">Address</div><div class="info-val small">G-13, Ravi Complex<br>Opp. GIDC Depot, Valia Chowkadi<br>Ankleshwar – 393 002<br>Dist. Bharuch, Gujarat, India</div></div>
         <div class="info-card"><div class="info-label">Working hours</div><div class="info-val small">Mon – Sat: 9:00 AM – 6:30 PM<br>Sunday: Closed</div></div>
@@ -872,15 +872,16 @@
           <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           WhatsApp
         </a>
-        <div class="form-group"><label>Your name *</label><input type="text" id="f-name" placeholder="Full name" required/></div>
-        <div class="form-group"><label>Company / organization *</label><input type="text" id="f-company" placeholder="Company name" required/></div>
-        <div class="form-group"><label>Email address *</label><input type="email" id="f-email" placeholder="your@email.com" required/></div>
-        <div class="form-group"><label>Phone number *</label><input type="tel" id="f-phone" placeholder="+91 98765 43210" required/></div>
-        
-        
-        <div class="form-group"><label>Products needed & quantity *</label><textarea id="f-msg" placeholder="E.g. 500 safety helmets, 200 pairs safety shoes, KARAM harnesses..."></textarea></div>
-        <button class="submit-btn" onclick="submitForm()">Send inquiry</button>
-        <div class="success-msg" id="succ">Thank you! We will get back to you within 24 hours.</div>
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
+          <input type="hidden" name="form-name" value="contact"/>
+          <p style="display:none;"><input name="bot-field"/></p>
+          <div class="form-group"><label>Your name *</label><input type="text" name="name" placeholder="Full name" required/></div>
+          <div class="form-group"><label>Company / organization *</label><input type="text" name="company" placeholder="Company name" required/></div>
+          <div class="form-group"><label>Email address *</label><input type="email" name="email" placeholder="your@email.com" required/></div>
+          <div class="form-group"><label>Phone number *</label><input type="tel" name="phone" placeholder="+91 98765 43210" required/></div>
+          <div class="form-group"><label>Products needed & quantity *</label><textarea name="message" placeholder="E.g. 500 safety helmets, 200 pairs safety shoes, KARAM harnesses..." required></textarea></div>
+          <button type="submit" class="submit-btn">Send inquiry</button>
+        </form>
       </div>
     </div>
   </div>
