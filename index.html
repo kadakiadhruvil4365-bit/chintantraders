@@ -54,12 +54,12 @@
     .page{display:none;}.page.active{display:block;}
 
     /* PAGE HERO (inner pages) */
-    .page-hero{background:var(--black);color:#fff;padding:5rem 2.5rem;text-align:center;position:relative;overflow:hidden;}
+    .page-hero{background:var(--black);color:#fff;padding:1.5rem 2.5rem;text-align:center;position:relative;overflow:hidden;}
     .page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 50% 120%,rgba(232,80,10,0.12) 0%,transparent 70%);pointer-events:none;}
-    .page-hero h1{font-family:var(--font-head);font-size:32px;font-weight:900;letter-spacing:3px;text-transform:uppercase;margin-bottom:0.6rem;position:relative;}
+    .page-hero h1{font-family:var(--font-head);font-size:20px;font-weight:900;letter-spacing:2px;text-transform:uppercase;margin-bottom:0.3rem;position:relative;}
     .page-hero h1 span{color:var(--orange);}
-    .page-hero p{color:rgba(255,255,255,0.55);font-size:14px;position:relative;}
-    .breadcrumb{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:1rem;font-size:12px;color:rgba(255,255,255,0.4);font-family:var(--font-body);position:relative;}
+    .page-hero p{color:rgba(255,255,255,0.55);font-size:13px;position:relative;margin-top:0.3rem;}
+    .breadcrumb{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:0.5rem;font-size:12px;color:rgba(255,255,255,0.4);font-family:var(--font-body);position:relative;}
     .breadcrumb span{color:rgba(255,255,255,0.6);}
     .breadcrumb .sep{color:rgba(255,255,255,0.2);}
 
@@ -95,11 +95,11 @@
     .cert-desc{font-family:var(--font-body);font-size:12px;color:#7A5A50;font-weight:600;}
 
     /* SECTIONS */
-    .section{padding:5rem 2.5rem;max-width:960px;margin:0 auto;}
+    .section{padding:2rem 2.5rem;max-width:960px;margin:0 auto;}
     .section-wide{padding:5rem 2.5rem;max-width:1100px;margin:0 auto;}
     .sec-title{font-family:var(--font-head);font-size:22px;font-weight:800;margin-bottom:0.6rem;letter-spacing:2px;text-transform:uppercase;color:var(--text-primary);text-align:center;}
     .sec-title span{color:var(--orange);}
-    .sec-sub{font-size:15px;color:var(--text-secondary);margin-bottom:2.5rem;line-height:1.6;text-align:center;}
+    .sec-sub{font-size:13px;color:var(--text-secondary);margin-bottom:1.2rem;line-height:1.6;text-align:center;}
     .divider{height:1px;background:var(--border);}
     .bg-off{background:var(--off-white);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
     .bg-black{background:var(--black);}
@@ -139,7 +139,7 @@
     .industry-card h4{font-family:var(--font-head);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--text-primary);line-height:1.4;}
 
     /* BRANDS */
-    .brands-bg{background:var(--white);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:5rem 2.5rem;}
+    .brands-bg{background:var(--white);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:2rem 2.5rem;}
     .brands-inner{max-width:960px;margin:0 auto;}
     .brands-tier{margin-bottom:2.25rem;}
     .tier-label{font-family:var(--font-head);font-size:11px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:1.2px;margin-bottom:1rem;display:flex;align-items:center;gap:12px;}
@@ -179,7 +179,7 @@
     .impact-text strong{display:block;font-family:var(--font-head);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--text-primary);margin-bottom:4px;}
 
     /* ABOUT PAGE */
-    .about-intro{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;padding:5rem 2.5rem;max-width:960px;margin:0 auto;}
+    .about-intro{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center;padding:2rem 2.5rem;max-width:960px;margin:0 auto;}
     .about-img{border-radius:var(--r-lg);overflow:hidden;aspect-ratio:4/3;}
     .about-img img{width:100%;height:100%;object-fit:cover;}
     .about-text h2{font-family:var(--font-head);font-size:22px;font-weight:800;letter-spacing:2px;text-transform:uppercase;margin-bottom:1rem;color:var(--text-primary);}
@@ -217,10 +217,10 @@
     .award-card p{font-size:12px;color:var(--text-secondary);line-height:1.6;}
 
     /* CTA STRIP */
-    .cta-strip{background:linear-gradient(135deg,var(--black) 0%,var(--black-mid) 100%);padding:5rem 2.5rem;text-align:center;position:relative;overflow:hidden;}
+    .cta-strip{background:linear-gradient(135deg,var(--black) 0%,var(--black-mid) 100%);padding:2rem 2.5rem;text-align:center;position:relative;overflow:hidden;}
     .cta-strip::before{content:'';position:absolute;width:320px;height:320px;border-radius:50%;background:rgba(232,80,10,0.1);top:-100px;right:-60px;pointer-events:none;}
     .cta-label{color:rgba(255,255,255,0.55);font-size:13px;margin-bottom:0.6rem;font-family:var(--font-body);}
-    .cta-heading{color:#fff;font-size:20px;font-weight:800;margin-bottom:1.75rem;font-family:var(--font-head);letter-spacing:3px;text-transform:uppercase;}
+    .cta-heading{color:#fff;font-size:18px;font-weight:800;margin-bottom:1.2rem;font-family:var(--font-head);letter-spacing:3px;text-transform:uppercase;}
 
     /* CONTACT */
     .contact-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:2.5rem;margin-top:1.75rem;}
@@ -309,8 +309,8 @@
       .cert-bar{padding:0.7rem 1rem;gap:4px;}
       .cert-item{padding:0.4rem 0.8rem;border-right:none;border-bottom:1px solid var(--border);}
       .cert-item:last-child{border-bottom:none;}
-      .section{padding:3rem 1.2rem;}
-      .brands-bg,.industries-bg,.impact-bg{padding:3rem 1.2rem;}
+      .section{padding:2rem 1.2rem;}
+      .brands-bg,.industries-bg,.impact-bg{padding:2rem 1.2rem;}
       .sec-title{font-size:18px;letter-spacing:1px;}
       .products-grid{grid-template-columns:repeat(2,1fr);}
       .cat-grid{grid-template-columns:1fr;}
@@ -325,9 +325,9 @@
       .about-intro{grid-template-columns:1fr;}
       .about-img{display:none;}
       .contact-grid{grid-template-columns:1fr;}
-      .page-hero{padding:3rem 1.5rem 2.5rem;}
-      .page-hero h1{font-size:24px;letter-spacing:2px;}
-      .cta-strip{padding:3rem 1.5rem;}
+      .page-hero{padding:1.8rem 1.5rem;}
+      .page-hero h1{font-size:20px;letter-spacing:1.5px;}
+      .cta-strip{padding:2rem 1.5rem;}
       .cta-heading{font-size:16px;letter-spacing:1.5px;}
       .footer-inner{grid-template-columns:1fr 1fr;gap:2rem;padding:2.5rem 1.5rem;}
       .footer-brand{grid-column:1/-1;}
